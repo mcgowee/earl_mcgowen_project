@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-2cprhd@*x1apcuu-g32fj5%r-o8ygjmh%3dx*$#mgf(y%s)bb(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mcgowee.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.earl-mcgowen.com']
 
 
 # Application definition
