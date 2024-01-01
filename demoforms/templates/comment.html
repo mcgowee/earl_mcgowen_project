@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comment Form</title>
+</head>
+<body>
+    <h1>Comment Form</h1>
+
+    <!-- Display success message -->
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Display user's question and AI's reply -->
+    {% if ai_reply %}
+        <h2>Your Question:</h2>
+        <p>{{ form_values.name }}</p>
+
+        <h2>AI's Reply:</h2>
+        <p>{{ ai_reply }}</p>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

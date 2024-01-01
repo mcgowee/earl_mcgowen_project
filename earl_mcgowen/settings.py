@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "about.apps.AboutConfig",
     "pages.apps.PagesConfig",
+    "demoforms"
 ]
 
 MIDDLEWARE = [
