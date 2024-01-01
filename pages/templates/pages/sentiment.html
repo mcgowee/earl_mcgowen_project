@@ -1,0 +1,12 @@
+{% block title %}create new list{% endblock %}
+
+
+{% block content %} 
+<form action="/sentiment" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name="Submit">Creeate List</button>
+</form>
+{% endblock %}
+
+
