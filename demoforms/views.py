@@ -15,10 +15,10 @@ class CommentFormView(FormView):
         messages.success(self.request, 'Form submitted successfully')
 
         # Get the user's question from the form
-        user_question = form.cleaned_data['name']
+        user_question = form.cleaned_data['comment']
 
         # Use OpenAI to generate a response
-        client = openai.OpenAI(api_key="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")
+        client = openai.OpenAI(api_key = "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")
         completion = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
