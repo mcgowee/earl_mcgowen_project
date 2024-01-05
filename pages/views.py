@@ -24,5 +24,3 @@ def sentiment(response):
 
 
     return render(response, "pages/sentiment.html", {"form": SentimentForm()})  
-
-

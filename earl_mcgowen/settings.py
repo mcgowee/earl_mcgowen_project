@@ -11,10 +11,17 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import os
 from decouple import config
 
 # ...
+
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load the variables from .env
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 OPENAI_API_KEY = config('OPENAI_API_KEY')
 
