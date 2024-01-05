@@ -27,6 +27,7 @@ urlpatterns = [
     path("sentiment/", views.sentiment, name="sentiment"),
     path("about/", include("about.urls")),
     path('demoforms/', include("demoforms.urls")),
+    path("dev_tracker/", include("dev_tracker.urls")),
     
 ]
 

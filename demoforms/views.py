@@ -18,7 +18,7 @@ class CommentFormView(FormView):
         user_question = form.cleaned_data['comment']
 
         # Use OpenAI to generate a response
-        client = openai.OpenAI(api_key = "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")
+        client = openai.OpenAI()
         completion = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[

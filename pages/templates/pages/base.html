@@ -21,39 +21,29 @@
   </head>
   <body>
 
-
-
     <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <img src="{% static 'pages/Logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Earl's Logo">
+              <span>Home Page</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'comment' %}">Chat Bot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% static 'pages/resume.pdf' %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/earl-l-mcgowen-b510884/" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
 
-
-    <div class="container">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'comment' %}">Chat Bot</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-
-      <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{% static 'pages/Logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Earl's Logo">
-            <span>Home Page</span>
-        </a>
-        <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="{% static 'pages/resume.pdf' %}">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/earl-l-mcgowen-b510884/" target="_blank">LinkedIn</a>
-              </li>
-            </ul>
-        </div>
-    </div>
 
     </nav>
 
